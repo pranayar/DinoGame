@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragon game</title>
+    <link rel="icon" type="image/x-icon" href="/JavaScript Dragon Game/dragon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="gameContainer">
+        <div class="gameOver">Welcome!</div>
+        <div class="dino"></div>
+        <div id="scoreCont">Your Score: 0</div>
+        <div class="obstacle obstacleAni"></div>
+    </div>
+</body>
+</html>
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.4/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.4/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyCBooO4fFpmETpf-U4GDfmNd7aWVz0cw2Y",
+      authDomain: "dino-game-4d8b9.firebaseapp.com",
+      projectId: "dino-game-4d8b9",
+      storageBucket: "dino-game-4d8b9.appspot.com",
+      messagingSenderId: "922915717697",
+      appId: "1:922915717697:web:2d2697bf029986d1eebcc0",
+      measurementId: "G-JGTD7CMB9D"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
